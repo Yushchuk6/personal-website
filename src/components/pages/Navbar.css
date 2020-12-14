@@ -1,0 +1,23 @@
+html {
+  height: 10000px;
+  background: #222;
+  color: #eee;
+}
+.navbar-container {
+  position: fixed;
+  display: inline;
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+  padding: 0.5em;
+  left: 50%;
+  top: 40px;
+  transform: translate(-50%);
+  background: #333;
+}
+.link {
+  color: #eee;
+  padding: 0 5%;
+  font: 2em sans-serif;
+  text-decoration: none;
+}
