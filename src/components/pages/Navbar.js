@@ -1,21 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+// import { BiPencil, BiHomeAlt } from "react-icons/bi";
 
 import "./Navbar.css";
 
 function Navbar() {
   return (
-    <div className="Navbar">
+    <div className="navbar">
       <div className="navbar-container container">
-        <Link className="link" to="/">
+        <NavLink className="link" to="/" exact>
           Home
-        </Link>
-        <Link className="link" to="/blog">
-          blog
-        </Link>
-        <Link className="link" to="/about">
+        </NavLink>
+        <NavLink className="link" to="/blog" exact>
+          Blog
+        </NavLink>
+        <NavLink className="link" to="/ttt" exact>
+          Blog2
+        </NavLink>
+        <NavLink className="link" to="/about">
           About
-        </Link>
+        </NavLink>
       </div>
     </div>
   );
