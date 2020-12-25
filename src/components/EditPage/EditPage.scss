@@ -1,0 +1,15 @@
+.edit-text {
+  flex: 1;
+  outline: none;
+  border: 0;
+  margin: 1vw;
+  display: block;
+  overflow: hidden;
+  resize: none;
+}
+.markdown {
+  flex: 1;
+  margin: 1vw;
+  overflow: auto;
+  resize: both;
+}

@@ -7,7 +7,7 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <div className="navbar">
-      <div className="navbar-container container">
+      <div className="navbar-container container flexbox-center">
         <NavLink className="link" to="/" exact>
           Home
         </NavLink>

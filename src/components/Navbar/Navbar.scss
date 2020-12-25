@@ -1,0 +1,59 @@
+$colors: (
+  primary: #ddd,
+  secondary: #8888,
+  bg: #222,
+);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+:root {
+  height: 3000px;
+  color: map-get($colors, primary);
+  background: map-get($colors, bg);
+}
+
+.navbar {
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 2px solid map-get($colors, secondary);
+}
+
+.flexbox-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+
+.navbar-container {
+  .link {
+    display: inline-flex;
+    color: map-get($colors, secondary);
+    font-size: 2em;
+    text-decoration: none;
+    transition: transform 400ms, color 400ms;
+    &:hover {
+      transform: scale(1.25);
+      color: map-get($colors, primary);
+    }
+  }
+  .active {
+    transform: scale(1.25);
+    color: map-get($colors, primary);
+  }
+}
+
+.icon {
+  margin-right: 0.2em;
+  transform: translateY(0.05em);
+}
